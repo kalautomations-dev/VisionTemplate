@@ -4,8 +4,8 @@
 
 /*
  * Design system — "Signal"
- * Warm orange brand, warm neutrals, Geist / Geist Mono.
- * 6px card radius, 1px hairline borders, subtle shadows, light by default.
+ * Cool indigo brand, blue-gray neutrals, Geist / Geist Mono.
+ * 6px card radius, 1px hairline borders, subtle shadows, system dark/light.
  *
  * This is the shared visual language for demo apps spun up from this template.
  * Style with the semantic tokens below (bg-background, text-muted-foreground,
@@ -50,88 +50,88 @@
   --radius-lg: var(--radius);
   --radius-xl: calc(var(--radius) + 4px);
 
-  /* Subtle, warm-tinted shadows */
-  --shadow-xs: 0 1px 2px 0 oklch(0.21 0.04 45 / 0.04);
-  --shadow-sm: 0 1px 2px 0 oklch(0.21 0.04 45 / 0.05),
-    0 1px 3px 0 oklch(0.21 0.04 45 / 0.04);
-  --shadow-md: 0 2px 4px -1px oklch(0.21 0.04 45 / 0.06),
-    0 4px 12px -2px oklch(0.21 0.04 45 / 0.08);
-  --shadow-lg: 0 8px 24px -4px oklch(0.21 0.04 45 / 0.1);
+  /* Subtle, cool-tinted shadows */
+  --shadow-xs: 0 1px 2px 0 oklch(0.21 0.04 265 / 0.04);
+  --shadow-sm: 0 1px 2px 0 oklch(0.21 0.04 265 / 0.05),
+    0 1px 3px 0 oklch(0.21 0.04 265 / 0.04);
+  --shadow-md: 0 2px 4px -1px oklch(0.21 0.04 265 / 0.06),
+    0 4px 12px -2px oklch(0.21 0.04 265 / 0.08);
+  --shadow-lg: 0 8px 24px -4px oklch(0.21 0.04 265 / 0.1);
 }
 
 @layer base {
   :root {
     --background: #ffffff;
-    --foreground: #1a1410;
+    --foreground: #0e1016;
     --card: #ffffff;
-    --card-foreground: #1a1410;
+    --card-foreground: #0e1016;
     --popover: #ffffff;
-    --popover-foreground: #1a1410;
+    --popover-foreground: #0e1016;
 
-    /* Orange brand */
-    --primary: #ea580c;
+    /* Indigo brand */
+    --primary: #5e6ad2;
     --primary-foreground: #ffffff;
-    --primary-hover: #dc4e08;
-    --primary-deep: #c2410c;
+    --primary-hover: #4e59c2;
+    --primary-deep: #3d47a8;
 
-    --secondary: #faf6f3;
-    --secondary-foreground: #2a211c;
+    --secondary: #f3f4f9;
+    --secondary-foreground: #1f2330;
 
-    /* Warm neutrals */
-    --muted: #f8f4f1;
-    --muted-foreground: #78716c;
+    /* Cool blue-gray neutrals */
+    --muted: #f4f5f8;
+    --muted-foreground: #6b7180;
 
-    /* Orange tint used for hover / highlight surfaces */
-    --accent: #fff4ed;
-    --accent-foreground: #c2410c;
+    /* Indigo tint used for hover / highlight surfaces */
+    --accent: #eef0fb;
+    --accent-foreground: #3d47a8;
 
-    /* Amber accent (Accent 2) */
-    --accent-2: #d97706;
+    /* Mint accent (Accent 2) */
+    --accent-2: #1ba883;
     --accent-2-foreground: #ffffff;
 
     --destructive: #e5484d;
     --destructive-foreground: #ffffff;
 
     /* 1px hairline borders */
-    --border: #ebe4de;
-    --input: #e4dcd4;
-    --ring: #ea580c;
+    --border: #e6e8ef;
+    --input: #dfe2ea;
+    --ring: #5e6ad2;
 
     --radius: 0.375rem;
   }
 
   .dark {
-    /* Warm charcoal surface with orange glow */
-    --background: #0c0a09;
-    --foreground: #faf7f5;
-    --card: #141110;
-    --card-foreground: #faf7f5;
-    --popover: #1c1816;
-    --popover-foreground: #faf7f5;
+    /* #08090A surface with indigo glow */
+    --background: #08090a;
+    --foreground: #f7f8f8;
+    --card: #0e1014;
+    --card-foreground: #f7f8f8;
+    --popover: #15171c;
+    --popover-foreground: #f7f8f8;
 
-    --primary: #f97316;
+    --primary: #6872e5;
     --primary-foreground: #ffffff;
-    --primary-hover: #fb8c3a;
-    --primary-deep: #ea580c;
+    --primary-hover: #7b84ec;
+    --primary-deep: #5e6ad2;
 
-    --secondary: #1c1816;
-    --secondary-foreground: #faf7f5;
+    --secondary: #16181d;
+    --secondary-foreground: #f7f8f8;
 
-    --muted: #1c1816;
-    --muted-foreground: #a8a29e;
+    --muted: #16181d;
+    --muted-foreground: #8a8f98;
 
-    --accent: #271c14;
-    --accent-foreground: #fdba74;
+    --accent: #1b1e26;
+    --accent-foreground: #c8ccff;
 
-    --accent-2: #fbbf24;
-    --accent-2-foreground: #0c0a09;
+    --accent-2: #2dd4aa;
+    --accent-2-foreground: #08090a;
 
     --destructive: #ff6166;
     --destructive-foreground: #ffffff;
 
-    --border: #292524;
-    --input: #322c28;
-    --ring: #f97316;
+    --border: #1e2127;
+    --input: #262a31;
+    --ring: #6872e5;
   }
 
   * {
