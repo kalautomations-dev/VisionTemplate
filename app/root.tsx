@@ -19,13 +19,13 @@ export const meta: Route.MetaFunction = () => [
   { name: "description", content: SITE.description },
 ];
 
-// Default to light unless the visitor has explicitly chosen dark. Runs before
+// Default to dark unless the visitor has explicitly chosen light. Runs before
 // paint so there's no theme flash on load.
-const themeBootScript = `(function(){try{var t=localStorage.getItem("theme");document.documentElement.classList.toggle("dark",t==="dark");}catch(e){}})();`;
+const themeBootScript = `(function(){try{var t=localStorage.getItem("theme");document.documentElement.classList.toggle("dark",t!=="light");}catch(e){document.documentElement.classList.add("dark");}})();`;
 
 export function Layout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en">
+    <html lang="en" className="dark">
       <head>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />

@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 // Reads the class set by the inline boot script in root.tsx so the button
 // renders the right icon on hydration without a flash.
 export function ThemeToggle() {
-  const [isDark, setIsDark] = useState(false);
+  const [isDark, setIsDark] = useState(true);
 
   useEffect(() => {
     setIsDark(document.documentElement.classList.contains("dark"));
