@@ -13,7 +13,7 @@ const features = [
   {
     title: "Styled out of the box",
     description:
-      "Geist type, a cool indigo palette, hairline borders, and dark mode by default — all wired to semantic tokens.",
+      "Geist type, a warm orange palette, hairline borders, and light mode by default — all wired to semantic tokens.",
   },
   {
     title: "Reusable pieces",
