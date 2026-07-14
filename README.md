@@ -1,8 +1,8 @@
-# VisionTemplate
+# VisionTemplate - If tunnel is open at https://vp-visiontemplate.kalautomations.com
 
 A clean, ready-to-demo full-stack starting point built with **React Router 8**
 (SSR), **Tailwind v4**, a local **Postgres** backend, and the "Signal" design
-system — cool indigo brand, Geist type, dark mode by default.
+system — warm orange brand, Geist type, light mode by default.
 
 Use it as a **GitHub template**: create a new repo from it for each demo, rename in
 `app/config.ts`, and start building.

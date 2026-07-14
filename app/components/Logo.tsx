@@ -2,7 +2,7 @@
 export function Logo({ className = "h-7 w-7" }: { className?: string }) {
   return (
     <span
-      className={`inline-flex items-center justify-center rounded-lg bg-black ring-1 ring-white/15 ${className}`}
+      className={`inline-flex items-center justify-center rounded-lg bg-primary ring-1 ring-primary-deep/20 ${className}`}
     >
       <svg className="h-[55%] w-[55%]" viewBox="0 0 32 32" fill="none">
         <path
